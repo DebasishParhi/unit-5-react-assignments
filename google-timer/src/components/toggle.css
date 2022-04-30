@@ -1,0 +1,48 @@
+.switch-container {
+    width: 50px;
+    height: 20px;
+    border-radius: 10em;
+    position: relative;
+    top: 5px;
+  }
+  #switch {
+    display: none;
+  }
+  #text {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  #toggleDiv {
+    display: flex;
+  }
+  .switch-color {
+    width: 50px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+    background: #cfd8dc;
+    border-radius: 10em;
+    z-index: -1;
+    position: absolute;
+    transition: all 500ms cubic-bezier(0.34, 1.36, 0.2, 1);
+  }
+  label {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    box-shadow: 2px 2px 10px 2px #cfd8dc;
+    z-index: 2;
+    cursor: pointer;
+  }
+  #switch:checked ~ label {
+    transform: translatex(28px) rotatez(360deg);
+  }
+  #switch:checked ~ .switch-color {
+    background: #00e676;
+  }
+  #switch ~ label {
+    transition: all 1s cubic-bezier(0.34, 1.36, 0.2, 1);
+  }

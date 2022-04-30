@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "username": "a2soumya.ranjan@gmail.com",
+      "age": "25",
+      "address": "7iktyik",
+      "salary": "5000",
+      "marital": "true",
+      "department": "bank",
+      "id": 1
+    }
+  ]
+}
